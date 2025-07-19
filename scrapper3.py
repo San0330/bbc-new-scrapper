@@ -150,12 +150,12 @@ for url_config in start_url:
                 print(f"❌ Error scraping article {full_url}: {e}")
 
         # Print 5 random samples from existing DataFrame at the end of each page
-        if len(df) > 0:
-            print(f"\n📊 Random 5 samples from current dataset (Total: {len(df)} articles):")
-            random_samples = df.sample(min(5, len(df)))
-            for idx, row in random_samples.iterrows():
-                print(f"  • {row['title'][:50]}... | Category: {row['category']} | ID: {row['id']}")
-            print()
+        # if len(df) > 0:
+        #     print(f"\n📊 Random 5 samples from current dataset (Total: {len(df)} articles):")
+        #     random_samples = df.sample(min(5, len(df)))
+        #     for idx, row in random_samples.iterrows():
+        #         print(f"  • {row['title'][:50]}... | Category: {row['category']} | ID: {row['id']}")
+        #     print()
 
 # Save updated CSV
 df.to_csv(csv_filename, index=False)
