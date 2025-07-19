@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Load the CSV file
-csv_filename = 'scraped_articles8.csv'
+csv_filename = 'scraped_articles.csv'
 
 def get_datetime_not_in_figure(url):
     try:
